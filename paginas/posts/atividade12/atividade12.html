@@ -11,23 +11,29 @@
 <body>
     <main>
         <div class="entrada">
-            <label>Nome do aluno: </label>
-            <input type="text" id="nome" placeholder="Digite seu nome..." autocomplete="off">
+            <h1>Calcular media</h1>
 
-            <label>Primeira nota: </label>
-            <input type="number" id="primeiraNota" placeholder="Digite a primeira nota..." autocomplete="off">
+            <label for="nome">Nome do aluno: </label>
+            <input type="text" id="nome" placeholder="Digite o nome do aluno" autocomplete="off">
 
-            <label>Segunda nota: </label>
-            <input type="number" id="segundaNota" placeholder="Digite a segunda nota..." autocomplete="off">
+            <label for="nota1">Primeira nota: </label>
+            <input type="text" id="nota1" placeholder="Digite a nota do aluno" min="0" max="10">
 
-            <label>Terceira nota: </label>
-            <input type="number" id="terceiraNota" placeholder="Digite a terceira nota..." autocomplete="off">
+            <label for="nota2">Segunda nota: </label>
+            <input type="text" id="nota2" placeholder="Digite a nota do aluno" min="0" max="10">
 
-            <button type="button" onclick="calcularMedia()">enviar</button>
+            <label for="nota3">Terceira nota: </label>
+            <input type="text" id="nota3" placeholder="Digite a nota do aluno" min="0" max="10">
+
+            <button type="button" onclick="calcularMedia()">calcular</button>
+
+            <a href="../../blog.html">
+                <button type="button">voltar</button>
+            </a>
 
             <p id="resultado"></p>
 
-            <script src="paginas/posts/atividade12/assets/js/atividade12.js"></script>
+            <script src="../atividade12/assets/js/atividade12.js"></script>
         </div>
     </main>
 </body>

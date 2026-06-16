@@ -16,6 +16,10 @@ a:visited {
     color: #050404;
 }
 
+button {
+    border-radius: 5px;
+}
+
 html, body {
     height: 100%;
     margin: 0;
@@ -91,4 +95,32 @@ footer {
     padding: 1rem;
     background-color: #60AFFF;
     text-align: center;
+}
+
+.form-contato {
+    background-color: #60AFFF;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+    gap: 10px;
+}
+
+#nome {
+    width: 300px;
+    border-radius: 10px;
+}
+
+#email {
+    width: 300px;
+    border-radius: 10px;
+}
+
+#msg {
+    height: 100px;
+    width: 300px;
+    border-radius: 10px;
 }
