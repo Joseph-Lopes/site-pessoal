@@ -5,33 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>José Lopes</title>
+    <base href="/">
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body>
-    <div id="header-placeholder"></div>
+    <div id="header"></div>
 
     <main>
 
     </main>
 
-    <div id="footer-placeholder"></div>
+    <div id="footer"></div>
 
-    <script>
-        // Carregar header
-        fetch('../components/header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('header-placeholder').innerHTML = data;
-            });
-
-        // Carregar footer
-        fetch('../components/footer.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('footer-placeholder').innerHTML = data;
-            });
-    </script>
+    <script src="../js/components.js"></script>
 </body>
 
 </html>
