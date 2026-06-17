@@ -9,16 +9,7 @@
 </head>
 
 <body>
-    <header>
-        <h1>Blog</h1>
-        <nav>
-            <ul>
-                <li><a href="../../../index.html">HOME</a></li>
-                <li><a href="../../contato.html">CURRICULO</a></li>
-                <li><a href="../../contato.html">CONTATO</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="header-placeholder"></div>
 
     <main>
         <h1>Resumo das páginas 43 a 55 do livro “Fundamento de Arte: Teoria e Prática”</h1>
@@ -74,9 +65,23 @@
             Etc.</p>
     </main>
 
-    <footer>
-        <p>Site pessoal - José Lopes</p>
-    </footer>
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Carregar header
+        fetch('../../../components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+
+        // Carregar footer
+        fetch('../../../components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
 </body>
 
 </html>

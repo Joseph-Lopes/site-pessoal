@@ -9,16 +9,7 @@
 </head>
 
 <body>
-    <header>
-        <h1>Blog</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">HOME</a></li>
-                <li><a href="curriculo.html">CURRICULO</a></li>
-                <li><a href="contato.html">CONTATO</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="header-placeholder"></div>
 
     <main>
         <div class="menu-blog">
@@ -29,13 +20,30 @@
                 <li>
                     <a href="posts/atividade12/atividade12.html">Atividade 12 de Lógica de programação.</a>
                 </li>
+                <li>
+                    <a href="posts/requisitos/resquisitosSite.html">Requisitos para o site.</a>
+                </li>
             </ul>
         </div>
     </main>
 
-    <footer>
-        <p>Site pessoal - José Lopes</p>
-    </footer>
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Carregar header
+        fetch('../components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+
+        // Carregar footer
+        fetch('../components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
 </body>
 
 </html>
